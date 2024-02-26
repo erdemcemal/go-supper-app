@@ -25,4 +25,8 @@ func Subtract(a, b int) int {
 
 func main() {
 	fmt.Println(Add(1, 2))
+
+	res, _ := Divide(10, 2)
+
+	fmt.Println(res)
 }
