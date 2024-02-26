@@ -26,7 +26,7 @@ jobs:
           go test -coverprofile=./cov.out ./...
 
       - name: Install Gosec
-        run: go get github.com/securego/gosec/cmd/gosec
+        run: GO111MODULE=on go get github.com/securego/gosec/cmd/gosec@latest
 
       - name: Run Gosec Security Scanner
         run: |
