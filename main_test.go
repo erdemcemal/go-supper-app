@@ -115,3 +115,8 @@ func TestSubtract(t *testing.T) {
 		})
 	}
 }
+
+func TestMain(m *testing.M) {
+	fmt.Println("Hello, World!")
+	m.Run()
+}
