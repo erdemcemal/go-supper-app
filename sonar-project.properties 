@@ -2,12 +2,17 @@ sonar.projectKey=supper-organization_go-supper-app
 sonar.organization=supper-organization
 
 # This is the name and version displayed in the SonarCloud UI.
-#sonar.projectName=go-supper-app
-#sonar.projectVersion=1.0
+sonar.projectName=go-supper-app
+sonar.projectVersion=1.0
 
 
 # Path is relative to the sonar-project.properties file. Replace "\" by "/" on Windows.
-#sonar.sources=.
+sonar.sources=.
+sonar.exclusions=**/*_test.go
 
-# Encoding of the source code. Default is default system encoding
-#sonar.sourceEncoding=UTF-8
+
+sonar.tests=.
+sonar.test.inclusions=**/*_test.go
+sonar.go.coverage.reportPaths=coverage.out
+
+sonar.externalIssuesReportPaths=report.json
